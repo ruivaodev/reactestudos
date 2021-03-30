@@ -4,8 +4,23 @@ function addBola() {
 
   let p1 = Math.floor(Math.random() * 500);
   let p2 = Math.floor(Math.random() * 400);
+  let cor = Math.floor(Math.random() * 200);
+  bola.setAttribute(
+    "style",
+    "left:" +
+      p1 +
+      "px; top:" +
+      p2 +
+      "px; background-color:RGB(" +
+      cor +
+      "," +
+      cor +
+      "," +
+      cor +
+      ");"
+  );
 
-  bola.setAttribute("style", "left:" + p1 + "px;top:" + p2 + "px;"); // pegando os estilos
+  // pegando os estilos
   bola.setAttribute("onclick", "estourar(this)");
 
   document.body.appendChild(bola); //criando a div
