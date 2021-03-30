@@ -17,6 +17,8 @@ function addBola() {
       cor +
       "," +
       cor +
+      "," +
+      cor +
       ");"
   );
 
